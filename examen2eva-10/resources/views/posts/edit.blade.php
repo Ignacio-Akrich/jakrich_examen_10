@@ -47,6 +47,13 @@
         <textarea class="form-control" title="content" rows="5" value="{{old('content')}}" required></textarea>
         </div>
         </div>
+        <div class="mb-3">
+        <label class="form-label">Access</label>
+        <select class="form-select" name="access" id="access" required>
+            <option value="private" value="{{ old('access') }}">Private</option>
+            <option value="public" value="{{ old('access') }}">Public</option>
+        </select>
+        </div>
         
         <input type="submit" class="btn btn-primary" value="Enviar">
   </body>  
