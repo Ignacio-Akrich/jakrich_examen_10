@@ -46,8 +46,8 @@ class PostController extends Controller
         //nombreCampoDatabase => $request->input('nombreCampoFormulario');
         
         'title' => $request->input('title'),
-        'create-date' => $request->input('create-date'),
-        'publi-date' => $request->input('publi-date'),
+        'create_date' => $request->input('create_date'),
+        'publi_date' => $request->input('publi_date'),
         'options' => json_encode($request->input('options')),
         'extract' => $request->input('extract'),
         'content' => $request->input('content'),
@@ -60,8 +60,8 @@ class PostController extends Controller
         // $post = new Post();
 
         // $post->title = $request->input('title');
-        // $post->create-date = $request->input('create-date');
-        // $post->publi-date = $request->input('publi-date');
+        // $post->create_date = $request->input('create_date');
+        // $post->publi_date = $request->input('publi_date');
         // $post->options = json_encode($request->input('options'));
         // $post->extract = $request->input('extract');
         // $post->content = $request->input('content');
@@ -110,7 +110,7 @@ class PostController extends Controller
         //
         Post::where('id',$id)->update([
             'title' => $request->input('title'),
-            'publi-date' => $request->input('publi-date'),
+            'publi_date' => $request->input('publi_date'),
             'options' => json_encode($request->input('options')),
             'extract' => $request->input('extract'),
             'content' => $request->input('content'),

@@ -13,8 +13,8 @@
         <tbody>
         @foreach($posts as $post)
             <tr>
-                <td>{{ $post->name}}</td>
-                <td>{{ $post->types }}</td>
+                <td>{{ $post->id}}</td>
+                <td>{{ $post->title }}</td>
                 <td> 
                 <form action="{{route('posts.destroy',$post->id)}}" method="POST">
                {{--   @can('isAdmin')  --}}

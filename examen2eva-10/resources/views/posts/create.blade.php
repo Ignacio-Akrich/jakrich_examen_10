@@ -20,11 +20,11 @@
         <input type="text" class="form-control" title="title" placeholder="Title" value="{{ old('title') }}" required>
         <div class="mb-3">
         <label class="form-label">@lang('Create date')</label>
-        <input type="date" class="form-control" title="create-date" value="{{old('create-date')}}" required>
+        <input type="date" class="form-control" title="create_date" value="{{old('create_date')}}" required>
         </div>
          <div class="mb-3">
         <label class="form-label">@lang('Publication date')</label>
-        <input type="date" class="form-control" title="publi-date" value="{{old('publi-date')}}" required>
+        <input type="date" class="form-control" title="publi_date" value="{{old('publi_date')}}" required>
         </div>
         <div class="mb-3">
         <label class="form-label">@lang('Options')</label>
